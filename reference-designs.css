@@ -1,0 +1,120 @@
+@font-face{font-family:Folio Signature;src:url('assets/vendor/Allura-Regular.ttf') format('truetype');font-display:swap}
+.designed .reference-columns{display:grid;grid-template-columns:minmax(0,31%) minmax(0,1fr);min-height:inherit;gap:0}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast){min-height:800px;--ink:#2d3137;font-family:var(--cv-font)}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .cv-section{margin-bottom:23px}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) h2{font-family:Arial,sans-serif;font-weight:700;font-size:.91em}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .cv-side h2{font-size:.82em}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .contact{font-size:.78em}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .contact-item{margin-bottom:10px}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .contact-label{font-size:.8em;opacity:.85}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .cv-side .skill{font-size:.82em;margin-bottom:6px}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .entry-top>span{font-size:.73em}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .portrait-wrap{width:100%;margin:0 auto 26px}
+.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .cv-photo,.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .cv-monogram{width:100%;height:auto;aspect-ratio:1;object-fit:cover}
+
+/* Timeline: a portrait crosses the masthead into the ruled sidebar. */
+.designed.timeline{background:#fff}
+.designed.timeline>.resume-header{background:var(--accent);padding:31px 26px 29px 36%;min-height:118px}
+.designed.timeline>.resume-header h1{font-size:28px;font-weight:700;text-transform:uppercase;color:var(--on-accent);margin-bottom:8px}
+.designed.timeline>.resume-header .job-title{font-size:.8em;color:var(--on-accent);font-weight:400}
+.designed.timeline .reference-columns{grid-template-columns:minmax(0,30%) minmax(0,1fr);min-height:682px}
+.designed.timeline .cv-side{padding:0 19px 26px;background:#f3f4f5;border-right:1px solid #d1d5db}
+.designed.timeline .portrait-wrap{width:104px;max-width:100%;margin:-56px auto 23px;position:relative}
+.designed.timeline .cv-photo,.designed.timeline .cv-monogram{border:4px solid #fff;border-radius:50%;box-shadow:0 0 0 1px #bfc5cc}
+.designed.timeline .cv-main{padding:25px 26px 26px 29px}
+.designed.timeline .cv-main .cv-section{position:relative;border-left:1px solid #c7ced7;padding-left:16px;margin-left:0;padding-bottom:1px}
+.designed.timeline .cv-main h2:before{content:'';position:absolute;left:-5px;top:0;width:9px;height:9px;background:var(--accent);border:2px solid #fff;outline:1px solid var(--accent);border-radius:50%}
+.designed.timeline .cv-main h2{padding-bottom:8px;border-bottom:1px solid #bfc7d2}
+.designed.timeline .cv-side h2{border-bottom:1px solid #afb9c6;padding-bottom:7px}
+
+/* Signature: a full-height blush panel, double photo mat, and script name. */
+.designed.signature .reference-columns{grid-template-columns:minmax(0,34%) minmax(0,1fr)}
+.designed.signature .cv-side{background:color-mix(in srgb,var(--accent) 66%,white);padding:25px 18px;color:#343035}
+.designed.signature .portrait-wrap{padding:5px;border:1px solid #fff;margin-bottom:22px}
+.designed.signature .cv-photo,.designed.signature .cv-monogram{aspect-ratio:3/4;border:5px solid #fff}
+.designed.signature .cv-main{padding:27px 25px}
+.designed.signature .resume-header{padding:0 0 30px;text-align:center;min-height:155px;align-items:center}
+.designed.signature h1{color:#212127;line-height:1.15;margin-bottom:14px}
+.designed.signature .signature-name{display:block;font-family:Folio Signature,'Segoe Script','Brush Script MT',cursive;font-size:65px;font-weight:400;line-height:.95}
+.designed.signature .signature-surname{display:block;font-family:Arial,sans-serif;font-size:24px;text-transform:uppercase;font-weight:600;margin-top:5px}
+.designed.signature .job-title{font-size:.75em;color:#343035;font-weight:400}
+.designed.signature .cv-main h2{background:color-mix(in srgb,var(--accent) 58%,white);border:0;color:#343035;padding:5px 8px;font-size:.8em}
+.designed.signature .cv-side h2{background:#fff;border:0;padding:5px 4px;text-align:center;color:#343035;font-size:.78em}
+.designed.signature .cv-side .cv-section{font-size:.88em}
+.designed.signature .contact-label,.designed.signature .organization{color:#514348}
+
+/* Harbor: navy from top to bottom with circular portrait and education rail. */
+.designed.harbor .reference-columns{grid-template-columns:minmax(0,30%) minmax(0,1fr)}
+.designed.harbor .cv-side{background:var(--accent);color:var(--on-accent);padding:28px 19px}
+.designed.harbor .portrait-wrap{width:102px;max-width:100%;margin-bottom:30px}
+.designed.harbor .cv-photo,.designed.harbor .cv-monogram{border-radius:50%;border:4px solid white}
+.designed.harbor .cv-side h2,.designed.harbor .cv-side .organization,.designed.harbor .cv-side .contact-label,.designed.harbor .cv-side .entry-top h3,.designed.harbor .cv-side .entry-top>span{color:var(--on-accent)}
+.designed.harbor .cv-side h2{border-bottom:1px solid color-mix(in srgb,var(--on-accent) 40%,transparent)}
+.designed.harbor .cv-side .entry{font-size:.87em}
+.designed.harbor .cv-main{padding:32px 27px}
+.designed.harbor .resume-header{padding:0 0 32px;min-height:126px}
+.designed.harbor h1{font-size:28px;font-weight:700;text-transform:uppercase;color:#353d42;margin-bottom:10px}
+.designed.harbor .job-title{font-size:.75em;position:relative;padding-bottom:16px;font-weight:400}
+.designed.harbor .job-title:after{content:'';display:block;width:55px;height:2px;background:var(--accent);position:absolute;bottom:0}
+.designed.harbor .cv-main h2{border-bottom:1px solid #aeb9c0;font-size:.86em}
+
+/* Slate: centered full-width masthead, a midnight rail, white pill labels. */
+.designed.slate>.resume-header{background:var(--accent);padding:28px 25px 25px;justify-content:center;text-align:center}
+.designed.slate>.resume-header h1{color:var(--on-accent);font-size:29px;font-weight:700;text-transform:uppercase;margin-bottom:8px}
+.designed.slate>.resume-header .job-title{color:var(--on-accent);font-size:.78em;font-weight:400}
+.designed.slate .reference-columns{grid-template-columns:minmax(0,35%) minmax(0,1fr);min-height:689px}
+.designed.slate .cv-side{background:var(--accent);color:var(--on-accent);padding:7px 24px 27px}
+.designed.slate .portrait-wrap{width:112px;max-width:100%;margin-bottom:23px}
+.designed.slate .cv-photo,.designed.slate .cv-monogram{aspect-ratio:4/5;border-radius:5px}
+.designed.slate .cv-side .cv-section{font-size:.87em}
+.designed.slate .cv-side h2{background:#fff;color:#303647;text-align:center;border:0;border-radius:14px;padding:5px;font-size:.8em}
+.designed.slate .cv-side .organization,.designed.slate .cv-side .entry-top h3,.designed.slate .cv-side .entry-top>span,.designed.slate .cv-side .contact-label{color:var(--on-accent)}
+.designed.slate .cv-main{padding:25px 24px}
+.designed.slate .cv-main h2{padding:0 0 9px;border-bottom:1px solid #acb4c1;font-size:.87em}
+
+/* Sage: muted teal sidebar with a peach nameplate and learning-first content. */
+.designed.sage .reference-columns{grid-template-columns:minmax(0,39%) minmax(0,1fr)}
+.designed.sage .cv-side{background:var(--accent);color:var(--on-accent);padding:30px 24px}
+.designed.sage .portrait-wrap{width:126px;max-width:100%;margin-bottom:30px}
+.designed.sage .cv-photo,.designed.sage .cv-monogram{border-radius:50%;border:3px solid #f6e4de}
+.designed.sage .cv-side h2,.designed.sage .cv-side .contact-label,.designed.sage .cv-side .organization,.designed.sage .cv-side .entry-top h3,.designed.sage .cv-side .entry-top>span{color:var(--on-accent)}
+.designed.sage .cv-side h2{border:0;padding:0;font-size:.87em}
+.designed.sage .cv-side .cv-section{font-size:.88em;margin-bottom:27px}
+.designed.sage .cv-main{padding:0 24px 28px}
+.designed.sage .resume-header{background:#e5c3b7;margin:42px -24px 27px;padding:24px;min-height:132px}
+.designed.sage h1{font-size:27px;text-transform:uppercase;font-weight:700;color:#2d3434;margin-bottom:9px}
+.designed.sage .job-title{color:#414447;font-size:.77em;font-weight:400}
+.designed.sage .cv-main h2{position:relative;border:0;padding:0 0 0 12px;font-size:.89em}
+.designed.sage .cv-main h2:before{content:'';width:5px;height:5px;background:var(--accent);position:absolute;left:0;top:3px;transform:rotate(45deg)}
+
+/* Contrast: an ink portrait rail, heavy name, and black section bars. */
+.designed.contrast .reference-columns{grid-template-columns:minmax(0,33%) minmax(0,1fr)}
+.designed.contrast .cv-side{padding:30px 17px;background:#eeeef0;border-top:28px solid var(--accent)}
+.designed.contrast .portrait-wrap{width:126px;max-width:100%;margin:0 auto 30px}
+.designed.contrast .cv-photo,.designed.contrast .cv-monogram{border-radius:50%;border:5px solid #fff;box-shadow:0 0 0 12px var(--accent)}
+.designed.contrast .cv-main{padding:31px 24px}
+.designed.contrast .resume-header{padding:0 0 31px;min-height:155px}
+.designed.contrast h1{font-family:var(--heading-font);font-size:39px;font-weight:900;line-height:1.04;text-transform:uppercase;color:var(--accent-text)}
+.designed.contrast .job-title{font-size:.75em;font-weight:700;color:#333}
+.designed.contrast h2,.designed.contrast .cv-side h2,.designed.contrast .cv-main h2{background:var(--accent);color:var(--on-accent);border:0;padding:5px 7px;text-align:center;font-size:.78em}
+.designed.contrast .cv-side .skill{padding-left:9px;position:relative}
+.designed.contrast .cv-side .skill:before{content:'';position:absolute;left:0;top:.6em;width:3px;height:3px;border-radius:50%;background:var(--accent)}
+.designed.contrast .cv-main .entry-top{flex-direction:column;gap:2px}
+
+@media screen and (max-width:740px){
+ .designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast){min-height:590px}
+ .designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .cv-section{margin-bottom:19px}
+ .designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast) .contact{font-size:.74em}
+ .designed.timeline>.resume-header{padding:23px 17px 24px 35%;min-height:111px}
+ .designed.timeline>.resume-header h1{font-size:23px}
+ .designed.timeline .reference-columns,.designed.slate .reference-columns{min-height:479px}
+ .designed.timeline .cv-side{padding:0 11px 20px}.designed.timeline .portrait-wrap{width:75px;margin-top:-43px;margin-bottom:18px}
+ .designed.timeline .cv-main{padding:20px 15px 20px 18px}.designed.timeline .cv-main .cv-section{padding-left:11px}
+ .designed.signature .cv-side{padding:18px 11px}.designed.signature .cv-main{padding:20px 15px}.designed.signature .resume-header{min-height:130px;padding:0 0 25px}
+ .designed.signature .signature-name{font-size:48px}.designed.signature .signature-surname{font-size:20px}
+ .designed.harbor .cv-side{padding:22px 12px}.designed.harbor .cv-main{padding:25px 17px}.designed.harbor .portrait-wrap{width:75px}.designed.harbor .resume-header{padding:0 0 24px;min-height:103px}.designed.harbor h1{font-size:24px}
+ .designed.slate>.resume-header{padding:25px 20px 23px}.designed.slate>.resume-header h1{font-size:25px}.designed.slate .cv-side{padding:5px 14px 20px}.designed.slate .cv-main{padding:20px 16px}.designed.slate .portrait-wrap{width:87px}
+ .designed.sage .cv-side{padding:24px 15px}.designed.sage .cv-main{padding:0 15px 24px}.designed.sage .portrait-wrap{width:94px}.designed.sage .resume-header{margin:30px -15px 24px;padding:22px 15px;min-height:111px}.designed.sage h1{font-size:23px}
+ .designed.contrast .cv-side{padding:22px 12px;border-top-width:21px}.designed.contrast .cv-main{padding:25px 16px}.designed.contrast .portrait-wrap{width:89px}.designed.contrast .cv-photo,.designed.contrast .cv-monogram{box-shadow:0 0 0 7px var(--accent)}.designed.contrast .resume-header{padding:0 0 24px;min-height:129px}.designed.contrast h1{font-size:29px}
+}
+@media print{.designed .reference-columns{min-height:0}.designed.timeline .reference-columns,.designed.slate .reference-columns{min-height:0}.designed:is(.timeline,.signature,.harbor,.slate,.sage,.contrast){min-height:0}.designed.timeline .cv-main .cv-section{box-decoration-break:clone;-webkit-box-decoration-break:clone}}

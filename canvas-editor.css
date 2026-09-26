@@ -1,0 +1,39 @@
+.preview-area{overflow:auto;background:var(--ui-workspace,#eaf0f4)}
+.paper-stage{position:relative;max-width:none;margin:20px auto}
+.a4-sheet{position:absolute;left:0;top:0;width:210mm;height:297mm;background:white;transform-origin:top left;box-shadow:0 5px 28px #0002;overflow:hidden}
+.a4-sheet.inactive-page{visibility:hidden;pointer-events:none}
+.a4-sheet .resume.designed{position:absolute;width:600px!important;min-height:0;zoom:1!important;box-sizing:border-box;box-shadow:none;display:block;overflow:visible}
+.a4-sheet .resume.designed>.reference-columns,.a4-sheet .resume.designed>.designed-columns{min-height:inherit}
+.a4-sheet .resume.designed .cv-section{margin-bottom:var(--section-gap,21px)}
+.a4-sheet .resume.designed.minimal .cv-section{row-gap:0}
+.a4-sheet .resume.designed.continuation .resume-header{min-height:0;padding-top:20px;padding-bottom:20px}
+.a4-sheet .resume.designed.continuation .cv-side{padding-top:25px}
+.canvas-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:12px}
+.canvas-tools-panel{margin:24px 0 0;padding-top:18px;border-top:1px solid var(--ui-line,#ccd4da);min-width:0}
+.canvas-tools-panel h3{font-size:13px;margin:0 0 14px}
+.canvas-tools-panel .canvas-controls{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.canvas-tools-panel .canvas-controls>label{display:grid;grid-template-columns:minmax(0,1fr) 76px 20px}
+.canvas-tools-panel .canvas-controls input,.canvas-tools-panel .canvas-controls select{width:76px}
+.canvas-tools-panel .canvas-navigation{justify-content:space-between}
+.canvas-tools-panel #block-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.canvas-tools-panel #block-options label{display:flex;flex-direction:column;align-items:stretch;gap:5px;min-width:0}
+.canvas-tools-panel #block-options input,.canvas-tools-panel #block-options select{width:100%;min-width:0}
+.canvas-tools-panel #block-options button{white-space:normal}
+.canvas-tools-panel #block-reset{grid-column:1/-1}
+.canvas-tools-panel #canvas-status{margin-bottom:0}
+.canvas-controls label,.block-tools label{display:flex;align-items:center;gap:6px;margin:0;font-size:11px}
+.canvas-controls select,.canvas-controls input,.block-tools input,.block-tools select{width:68px;padding:6px;margin:0}
+.canvas-controls select{width:90px}.canvas-controls button{padding:6px 10px}.canvas-navigation{display:flex;align-items:center;gap:8px}
+#zoom-label{padding:0 8px}#canvas-status{font-size:11px;color:var(--ui-muted);line-height:1.6}#canvas-status.warning{color:#c67333}
+.block-tools{margin:14px 0;padding:12px;border:1px solid var(--ui-line,#ccd4da);border-radius:8px;font-size:12px}.block-tools small{display:block;margin-top:10px;color:var(--ui-muted);line-height:1.6}
+#block-options{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}#block-options button{font-size:11px;padding:6px 9px}#block-options button[aria-pressed=true]{background:var(--ui-accent);color:var(--ui-surface)}
+.selected-block{outline:1px solid #568ddc;outline-offset:3px}[data-block]{cursor:move;touch-action:none}
+.canvas-overflow{max-height:300px;overflow:auto}.canvas-overflow pre{white-space:pre-wrap;font:12px/1.6 Arial}
+@media print{
+ .canvas-controls,.block-tools,#canvas-status,.canvas-overflow{display:none!important}
+ .paper-stage{position:static;width:210mm!important;height:auto!important;margin:0!important}
+ .a4-sheet,.a4-sheet.inactive-page{position:relative;visibility:visible;display:block;transform:none!important;width:210mm;height:297mm;box-shadow:none;break-after:page;break-inside:avoid}
+ .a4-sheet:last-child{break-after:auto}
+ .selected-block{outline:none!important}
+ .a4-sheet .resume.designed{zoom:1!important}
+}

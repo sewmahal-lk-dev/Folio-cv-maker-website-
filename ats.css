@@ -1,0 +1,19 @@
+.ats-panel{border-top:1px solid var(--ui-line,#ccd4da);margin-top:24px;padding-top:18px;font-size:12px;line-height:1.6}
+.ats-panel h3{font-size:14px;margin:0}.ats-panel p{margin:8px 0}.ats-panel small,.ats-note{color:var(--ui-muted)}
+.ats-toggle{display:flex;gap:8px;align-items:center}.ats-panel textarea{width:100%;resize:vertical}.ats-panel ul{padding-left:18px}.ats-panel li{margin:7px 0}
+.ats-pass{color:var(--ui-accent,#167d8d)}.ats-review{color:var(--ui-text)}.ats-term{display:block;overflow-wrap:anywhere}
+.ats-panel pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.6 Arial;max-height:240px;overflow:auto}.ats-panel a{font-size:11px}
+.a4-sheet .resume.designed.ats-layout{font-family:Arial,sans-serif!important;background:white!important;color:#222!important;font-size:11px!important;line-height:1.5!important}
+.a4-sheet .resume.designed.ats-layout .ats-body{padding:30px 34px}
+.a4-sheet .resume.designed.ats-layout .cv-main{padding:0;background:none;border:0}
+.a4-sheet .resume.designed.ats-layout h1{font:700 27px/1.2 Arial;margin:0 0 10px;color:#111;text-transform:none;letter-spacing:0}
+.a4-sheet .resume.designed.ats-layout h2{font:700 13px/1.4 Arial;margin:0 0 8px;padding:0 0 4px;color:#111;border:0;border-bottom:1px solid #bbb;background:none;text-transform:none;letter-spacing:0;display:block}
+.a4-sheet .resume.designed.ats-layout h2:before{display:none}
+.a4-sheet .resume.designed.ats-layout .cv-section{display:block;border:0;padding:0}
+.a4-sheet .resume.designed.ats-layout .entry{border:0;padding:0;margin:0 0 13px}
+.a4-sheet .resume.designed.ats-layout .entry-top{display:block}
+.a4-sheet .resume.designed.ats-layout .entry-top>span{font-size:11px;color:#333;background:none;padding:0;display:block;text-align:left}
+.a4-sheet .resume.designed.ats-layout h3{font:700 12px/1.5 Arial;color:#222}
+.a4-sheet .resume.designed.ats-layout p{margin:4px 0;color:#222;font-size:11px}
+.ats-identity{margin-bottom:22px}
+@media print{.ats-panel{display:none!important}}

@@ -1,0 +1,64 @@
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+  .workspace, .preview-area, .paper-stage {
+    display: block;
+    width: auto;
+    max-width: none;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  /* Scale a 600px design canvas to 210mm; the default body text becomes 10.9pt. */
+  #cv-preview.resume.designed {
+    zoom: 1.32283464;
+    width: 600px;
+    min-height: 848.5px;
+    margin: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  #cv-preview > .resume-header,
+  #cv-preview > .cv-document-mark,
+  #cv-preview > .contact-strip {
+    flex: 0 0 auto;
+  }
+
+  /* Let the paper's color columns reach the foot of a short CV. */
+  #cv-preview > .reference-columns,
+  #cv-preview > .designed-columns,
+  #cv-preview > .resume-body {
+    flex: 1 0 auto;
+    min-height: 0;
+  }
+
+  #cv-preview .cv-section {
+    break-inside: auto;
+  }
+
+  #cv-preview .cv-side > .cv-section:last-child {
+    margin-bottom: 0;
+  }
+
+  #cv-preview .entry {
+    break-inside: avoid;
+  }
+
+  #cv-preview h2 {
+    break-after: avoid;
+  }
+}

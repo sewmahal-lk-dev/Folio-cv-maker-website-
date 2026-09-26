@@ -1,0 +1,11 @@
+node_modules/
+hosting/
+github-upload/
+/*.pdf
+/*.png
+.env
+.env.*
+!.env.example
+.netlify/
+.vercel/
+__pycache__/
